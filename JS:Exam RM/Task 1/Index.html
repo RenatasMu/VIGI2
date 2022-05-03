@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weight Converter</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Custom JS -->
+    <script defer src="./script.js"></script>
+  </head>
+<body>
+    <!-- Title of your Converter -->
+    <h2 style="color: Green;">Weight Converter</h2>
+     
+<p>Enter a value in the Kilograms field to convert :</p>
+
+
+     
+<p>
+        <!-- label the input field -->
+        <label>Kilograms</label>
+        <!-- input tag for enter the data -->
+        <!-- kiloweightConvert function call
+function kiloweightConvert to evaluate value-->
+        <input id="Kilograms"
+               type="number"
+               placeholder="kilograms"
+               oninput="kiloweightConvert(this.value)"
+               onchange="kiloweightConvert(this.value)" />
+    </p>
+
+    <!-- output field-->
+    
+     
+<div>Pounds: <span id="Pounds"></span></div>
+
+     
+<div>Ounces: <span id="Ounces"></span></div>
+
+     
+<div>Grams: <span id="Grams"></span></div>
+
+
+</body>
+</html>
